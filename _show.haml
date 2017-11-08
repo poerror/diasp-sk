@@ -5,7 +5,7 @@
         %h1= t("home.default.headline", pod_name: pod_name)
         %h2= t("home.default.byline")
         %hr
-        %h1= "Vitaj na Diaspora*"
+        %h1= "Vitaj na #{pod_name}"
         %h2= "Sociálnia sieť, ktorú máš pod kontrolou"
       .col-md-4.login-form{ style: "margin-top: 80px;" }
         = render partial: "sessions/form", locals: {mobile: false, resource: User.new, resource_name: :user}
